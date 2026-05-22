@@ -15,6 +15,11 @@
   --radius-lg: 28px;
   --radius-md: 18px;
   --shadow: 0 24px 80px rgba(0, 0, 0, 0.32);
+
+  --brand-blue: #60A5FA;
+  --brand-blue-light: #8EC5FF;
+  --brand-navy: #071120;
+  --brand-text: #EEF4FF;
 }
 
 * {
@@ -136,7 +141,7 @@ h1 {
   margin: 0;
   font-size: clamp(48px, 9vw, 96px);
   line-height: 0.92;
-  letter-spacing: -0.075em;
+  letter-spacing: -0.015em;
 }
 
 h2 {
