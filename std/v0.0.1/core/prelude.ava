@@ -1,0 +1,17 @@
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+// AvaLang standard library seed: core/prelude.ava
+//
+// This file is intentionally minimal. It is a placeholder for the early
+// versioned standard-library distribution served from avalang.io.
+//
+// In later tutorial phases, this prelude will re-export the smallest stable
+// core names that every Ava program should be able to rely on.
+
+package core
+
+// Reserved for future core exports.
+// Example future exports:
+// pub use Option
+// pub use Result
+// pub use assert

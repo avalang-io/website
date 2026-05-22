@@ -1,0 +1,36 @@
+{
+  "name": "avalang-std",
+  "version": "v0.0.1",
+  "status": "placeholder-seed",
+  "description": "Initial placeholder standard-library seed for AvaLang website distribution.",
+  "source_extension": ".ava",
+  "compiler_command": "avac",
+  "base_url": "https://avalang.io/std/v0.0.1/",
+  "license": "Apache-2.0 WITH LLVM-exception",
+  "generated_at": "2026-05-22T15:51:43.008563+00:00",
+  "files": [
+    {
+      "path": "c/c.ava",
+      "url": "https://avalang.io/std/v0.0.1/c/c.ava",
+      "sha256": "136c22d1aa4f61a57cb3ed27c777d8cd9a3d2a8f2f20c06886e8ece3adf5d106",
+      "size": 558
+    },
+    {
+      "path": "core/prelude.ava",
+      "url": "https://avalang.io/std/v0.0.1/core/prelude.ava",
+      "sha256": "ea3e08028b52b0df472badbc02a88cf8443e38436464cec07b02e8c657a9e730",
+      "size": 533
+    },
+    {
+      "path": "io/io.ava",
+      "url": "https://avalang.io/std/v0.0.1/io/io.ava",
+      "sha256": "643a5e34f51df406b1008105dbd51e8ed60d8bc1d891fff9fc01cbc6d6024107",
+      "size": 1035
+    }
+  ],
+  "notes": [
+    "This version is a placeholder seed for website structure and future compiler import tests.",
+    "Versioned stdlib paths should be treated as immutable after publication.",
+    "Do not mutate files under an already-published version path; publish a new version instead."
+  ]
+}

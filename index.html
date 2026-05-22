@@ -3,14 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <!-- Standard favicon for browser tabs -->
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/logo-dark/favicons/favicon-32x32.png">
-  
+
   <!-- Apple Touch Icon for iOS -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/logo-dark/favicons/apple-touch-icon.png">
-  
+
   <!-- Web Manifest for Android/PWA -->
   <link rel="manifest" href="/assets/images/logo-dark/favicons/manifest.webmanifest">
+
   <title>AvaLang</title>
   <meta
     name="description"
@@ -38,9 +40,10 @@
     </a>
 
     <nav class="nav" aria-label="Main navigation">
-      <a href="#why">Why</a>
-      <a href="#goals">Goals</a>
-      <a href="#status">Status</a>
+      <a href="/std/">Std</a>
+      <a href="/book/">Book</a>
+      <a href="/reference/">Reference</a>
+      <a href="/examples/">Examples</a>
       <a href="https://github.com/avalang-io">GitHub</a>
     </nav>
   </header>
@@ -59,11 +62,14 @@
       </p>
 
       <div class="actions">
-        <a class="button primary" href="https://github.com/avalang-io">
-          View GitHub
+        <a class="button primary" href="/book/">
+          Read the book
         </a>
-        <a class="button secondary" href="#status">
-          Project status
+        <a class="button secondary" href="/std/">
+          View stdlib
+        </a>
+        <a class="button secondary" href="https://github.com/avalang-io">
+          GitHub
         </a>
       </div>
 
@@ -134,6 +140,64 @@ $ ./main</code></pre>
       </ul>
     </section>
 
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Project sections</p>
+        <h2>Simple static pages for the language, tutorial, and stdlib.</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3><a href="/std/">Standard library</a></h3>
+          <p>
+            Versioned <code>.ava</code> source files served from
+            <code>avalang.io</code>. These paths will support future imports,
+            manifests, lock files, and checksums.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><a href="/book/">Book</a></h3>
+          <p>
+            The public tutorial will build the compiler step by step from first
+            principles, with a working checkpoint for every major topic.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><a href="/reference/">Reference</a></h3>
+          <p>
+            The language reference will collect syntax, semantics, diagnostics,
+            AIR, LLVM, ABI, and compiler-interface details.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><a href="/examples/">Examples</a></h3>
+          <p>
+            Examples will include positive programs, negative programs,
+            diagnostic cases, common snippets, and agent-friendly references.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/avalang-io">GitHub</a></h3>
+          <p>
+            The GitHub organization hosts the website and will host the public
+            compiler/tutorial implementation when the first checkpoints are ready.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Status</h3>
+          <p>
+            AvaLang is currently in early public preparation. The goal is a clean,
+            understandable compiler implementation, not a rushed incomplete release.
+          </p>
+        </article>
+      </div>
+    </section>
+
     <section id="status" class="section status">
       <p class="eyebrow">Current status</p>
       <h2>Early public preparation.</h2>
@@ -150,12 +214,12 @@ $ ./main</code></pre>
           <span>Landing page online</span>
         </div>
         <div>
-          <strong>Compiler</strong>
-          <span>Public tutorial repo planned</span>
+          <strong>Stdlib hosting</strong>
+          <span>Versioned static paths prepared</span>
         </div>
         <div>
-          <strong>Language</strong>
-          <span>Syntax and roadmap being organized</span>
+          <strong>Compiler</strong>
+          <span>Public tutorial repo planned</span>
         </div>
       </div>
     </section>
@@ -172,6 +236,14 @@ $ ./main</code></pre>
       <a href="https://github.com/avalang-io">GitHub</a>
       <span aria-hidden="true">·</span>
       <a href="https://github.com/avalang-io/website">Website repo</a>
+      <span aria-hidden="true">·</span>
+      <a href="/std/">Std</a>
+      <span aria-hidden="true">·</span>
+      <a href="/book/">Book</a>
+      <span aria-hidden="true">·</span>
+      <a href="/reference/">Reference</a>
+      <span aria-hidden="true">·</span>
+      <a href="/examples/">Examples</a>
     </p>
   </footer>
 </body>

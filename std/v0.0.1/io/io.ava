@@ -1,0 +1,32 @@
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+// AvaLang standard library seed: io/io.ava
+//
+// Early bootstrap I/O will be intentionally small. Generic println[T] comes
+// later after traits, Display, String, and richer stdlib support exist.
+
+package io
+
+from "https://avalang.io/std/v0.0.1/c/c.ava" import {c}
+
+// This is a placeholder sketch. The early compiler will decide when extern
+// declarations, unsafe blocks, c-string literals, and std/c are implemented.
+//
+// extern "C" {
+//     fn puts(s: *const c.char) -> c.int
+// }
+
+// Placeholder signatures for the tutorial roadmap.
+// Actual bodies will be added only after C interop and c-string literals exist.
+
+pub fn println_str(s: str) -> void {
+    // TODO(v0.0.x): implement through C puts or platform-specific backend.
+}
+
+pub fn println_i64(n: i64) -> void {
+    // TODO(v0.0.x): implement through C printf wrapper or formatting layer.
+}
+
+pub fn println_bool(value: bool) -> void {
+    // TODO(v0.0.x): implement after bool printing helper is introduced.
+}

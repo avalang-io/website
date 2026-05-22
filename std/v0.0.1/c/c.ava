@@ -1,0 +1,22 @@
+// SPDX-License-Identifier: Apache-2.0 WITH LLVM-exception
+//
+// AvaLang standard library seed: c/c.ava
+//
+// This file defines early C ABI names used by the tutorial compiler.
+// The exact compiler support for these aliases will be introduced step by step.
+
+package c
+
+// Early C ABI aliases.
+//
+// These are placeholders until the compiler implements source-backed standard
+// modules and C ABI type lowering.
+pub type int = i32
+pub type char = i8
+pub type void = void
+
+// Future examples:
+//
+// extern "C" {
+//     fn puts(s: *const c.char) -> c.int
+// }

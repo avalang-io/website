@@ -1,0 +1,24 @@
+# HTML should be revalidated so updates appear quickly.
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Versioned standard library files are immutable.
+/std/v*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Brand assets can be cached.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Manifests and checksums should be revalidated unless version-pinned.
+/std/index.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+/std/*/manifest.json
+  Cache-Control: public, max-age=0, must-revalidate
+
+/std/*/SHA256SUMS
+  Cache-Control: public, max-age=0, must-revalidate
