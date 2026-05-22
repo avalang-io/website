@@ -3,34 +3,167 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <title>AvaLang</title>
   <meta
     name="description"
-    content="AvaLang is an early-stage programming language project currently under development."
+    content="AvaLang is an independent open-source programming language and compiler tutorial project designed for humans and coding agents."
   />
-  <link rel="stylesheet" href="/styles.css" />
-</head>
-<body>
-  <main class="page">
-    <section class="hero">
-      <p class="eyebrow">AvaLang</p>
 
-      <h1>A modern programming language under development.</h1>
+  <meta property="og:title" content="AvaLang" />
+  <meta
+    property="og:description"
+    content="A native programming language and compiler tutorial project designed for humans and coding agents."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://avalang.io" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">
+      <span class="brand-mark">A</span>
+      <span>AvaLang</span>
+    </a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#why">Why</a>
+      <a href="#goals">Goals</a>
+      <a href="#status">Status</a>
+      <a href="https://github.com/avalang-io">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Programming language · Compiler · Tutorial</p>
+
+      <h1>A modern native language built for humans and coding agents.</h1>
 
       <p class="lead">
-        AvaLang is an early-stage general-purpose programming language project.
-        The language, compiler, tooling, and documentation are currently being designed.
+        AvaLang is an independent open-source programming language and compiler
+        project. The goal is to build a clean native compiler from first
+        principles, with strong diagnostics, structured compiler output, and a
+        path toward self-hosting.
       </p>
 
-      <p class="note">
-        More details will be shared here as the project evolves.
+      <div class="actions">
+        <a class="button primary" href="https://github.com/avalang-io">
+          View GitHub
+        </a>
+        <a class="button secondary" href="#status">
+          Project status
+        </a>
+      </div>
+
+      <div class="terminal" aria-label="AvaLang command example">
+        <div class="terminal-bar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <pre><code>$ avac build main.ava -o main
+$ ./main</code></pre>
+      </div>
+    </section>
+
+    <section id="why" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Why AvaLang</p>
+        <h2>A compiler project for the LLM and coding-agent era.</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Human readable</h3>
+          <p>
+            AvaLang is designed to be explicit, readable, and teachable. The
+            public implementation will be written as a tutorial so readers can
+            understand every compiler stage.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Agent friendly</h3>
+          <p>
+            The compiler will prioritize stable error codes, precise source
+            spans, JSON diagnostics, and tutorial-linked examples so coding
+            agents can interact with it reliably.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>Native by default</h3>
+          <p>
+            AvaLang is planned as a native compiled language. The early compiler
+            will target macOS and Linux from the beginning.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="goals" class="section split">
+      <div>
+        <p class="eyebrow">Design goals</p>
+        <h2>Small steps, serious architecture.</h2>
+        <p>
+          AvaLang starts with a lean C++ bootstrap compiler, then gradually moves
+          higher-level behavior into <code>.ava</code> source files. The long-term
+          goal is a self-hosting compiler written in AvaLang.
+        </p>
+      </div>
+
+      <ul class="feature-list">
+        <li>Source files use the <code>.ava</code> extension.</li>
+        <li>The compiler command is planned as <code>avac</code>.</li>
+        <li>The future umbrella tool may use <code>avalang</code>.</li>
+        <li>Every tutorial checkpoint will be testable and tagged.</li>
+        <li>Diagnostics are treated as a core compiler interface.</li>
+        <li>macOS and Linux support are planned from the beginning.</li>
+      </ul>
+    </section>
+
+    <section id="status" class="section status">
+      <p class="eyebrow">Current status</p>
+      <h2>Early public preparation.</h2>
+      <p>
+        AvaLang is currently in the tutorial and public-repository preparation
+        stage. The first public goal is not to rush a production compiler, but to
+        publish a clean, understandable compiler implementation from first
+        principles.
       </p>
 
-      <div class="links">
-        <a href="https://github.com/avalang-io">GitHub</a>
-        <a href="mailto:io.avalang@gmail.com">Contact</a>
+      <div class="status-grid">
+        <div>
+          <strong>Website</strong>
+          <span>Landing page online</span>
+        </div>
+        <div>
+          <strong>Compiler</strong>
+          <span>Public tutorial repo planned</span>
+        </div>
+        <div>
+          <strong>Language</strong>
+          <span>Syntax and roadmap being organized</span>
+        </div>
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <p>
+      AvaLang is an independent open-source programming language project. It is
+      not affiliated with, sponsored by, endorsed by, or connected to any
+      employer, company, or third-party product.
+    </p>
+
+    <p>
+      <a href="https://github.com/avalang-io">GitHub</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://github.com/avalang-io/website">Website repo</a>
+    </p>
+  </footer>
 </body>
 </html>
