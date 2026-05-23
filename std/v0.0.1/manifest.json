@@ -4,7 +4,7 @@
   "status": "placeholder-seed",
   "description": "Initial placeholder standard-library seed for AvaLang website distribution.",
   "source_extension": ".ava",
-  "compiler_command": "avac",
+  "tool_command": "avalang",
   "base_url": "https://avalang.io/std/v0.0.1/",
   "license": "Apache-2.0 WITH LLVM-exception",
   "generated_at": "2026-05-22T15:51:43.008563+00:00",

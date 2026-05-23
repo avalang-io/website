@@ -20,8 +20,7 @@ Current site contents:
 
 - Project name: `AvaLang`
 - Source file extension: `.ava`
-- Compiler command: `avac`
-- Future umbrella tool command: `avalang`
+- Command-line tool: `avalang`
 
 ## Local development
 
